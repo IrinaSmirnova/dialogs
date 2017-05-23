@@ -1,4 +1,44 @@
 $(function () {
+
+    $.easing.jswing = $.easing.swing;
+    $.extend($.easing,
+        {
+            def: 'easeOutQuad',
+            swing: function (x, t, b, c, d) {
+                return $.easing[$.easing.def](x, t, b, c, d);
+            },
+            easeInQuad: function (x, t, b, c, d) {
+                return c*(t/=d)*t + b;
+            },
+            easeOutQuad: function (x, t, b, c, d) {
+                return -c *(t/=d)*(t-2) + b;
+            },
+            easeInOutQuad: function (x, t, b, c, d) {
+                if ((t/=d/2) < 1) return c/2*t*t + b;
+                return -c/2 * ((--t)*(t-2) - 1) + b;
+            },
+            easeInQuart: function (x, t, b, c, d) {
+                return c*(t/=d)*t*t*t + b;
+            },
+            easeOutQuart: function (x, t, b, c, d) {
+                return -c * ((t=t/d-1)*t*t*t - 1) + b;
+            },
+            easeInOutQuart: function (x, t, b, c, d) {
+                if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+                return -c/2 * ((t-=2)*t*t*t - 2) + b;
+            },
+            easeInQuint: function (x, t, b, c, d) {
+                return c*(t/=d)*t*t*t*t + b;
+            },
+            easeOutQuint: function (x, t, b, c, d) {
+                return c*((t=t/d-1)*t*t*t*t + 1) + b;
+            },
+            easeInOutQuint: function (x, t, b, c, d) {
+                if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+                return c/2*((t-=2)*t*t*t*t + 2) + b;
+            }
+        });
+
     var $messagingInput = $('.messaging__input'),
         $messagingNew = $('.messaging__new'),
         $messagingSend = $('.messaging__send'),
@@ -33,13 +73,13 @@ $(function () {
     });
 
     $('.header__back-btn').click(function () {
-        $messaging.animate({left: 2000}, 700).fadeOut();
+        $messaging.animate({left: 500}, 600, 'easeInQuart').fadeOut();
     });
 
     $messagingMessages.scrollTop($messagingMessages[0].scrollHeight);
 
     $('.chat__contact').click(function () {
-        $messaging.fadeIn().animate({left: 0}, 300)
+        $messaging.fadeIn().animate({left: 0}, 600, 'easeOutQuint')
     });
 
     $('.anti-fraud__close').click(function () {
