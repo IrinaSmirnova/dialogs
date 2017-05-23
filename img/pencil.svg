@@ -1,0 +1,18 @@
+<svg width="8" height="10" viewBox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Rectangle 20</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2900 195)">
+<g id="Rectangle 20">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="matrix(0.848489 0.529213 -0.529213 0.848489 -2895.15 -194.625)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="matrix(0.848489 0.529213 -0.529213 0.848489 -2895.15 -194.625)" fill="#C4C4C4"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 3.29575 0L 3.29575 8.48771L 1.45503 10.064L 0 8.48771L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 3.29575 0L 4.29575 0L 4.29575 -1L 3.29575 -1L 3.29575 0ZM 3.29575 8.48771L 3.94619 9.24727L 4.29575 8.94793L 4.29575 8.48771L 3.29575 8.48771ZM 0 8.48771L -1 8.48771L -1 8.8787L -0.734804 9.16599L 0 8.48771ZM 1.45503 10.064L 0.72023 10.7423L 1.3737 11.4502L 2.10548 10.8236L 1.45503 10.064ZM 0 1L 3.29575 1L 3.29575 -1L 0 -1L 0 1ZM 2.29575 0L 2.29575 8.48771L 4.29575 8.48771L 4.29575 0L 2.29575 0ZM 1 8.48771L 1 0L -1 0L -1 8.48771L 1 8.48771ZM 2.6453 7.72816L 0.804591 9.30445L 2.10548 10.8236L 3.94619 9.24727L 2.6453 7.72816ZM 2.18984 9.38572L 0.734804 7.80943L -0.734804 9.16599L 0.72023 10.7423L 2.18984 9.38572Z"/>
+</defs>
+</svg>

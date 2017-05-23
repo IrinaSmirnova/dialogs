@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dialogs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <button class="header__back-btn"></button>
+        </header>
+        <main class="dialogs">
+            <section class="chat">
+                <ul class="chat__list">
+                    <li class="chat__contact">
+                        <img src="img/avatar.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                    <li class="chat__contact chat__contact--active">
+                        <img src="img/avatar1.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name chat__name--online">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                    <li class="chat__contact">
+                        <img src="img/avatar.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name chat__name--online">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                    <li class="chat__contact">
+                        <img src="img/avatar.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                    <li class="chat__contact">
+                        <img src="img/avatar.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                    <li class="chat__contact">
+                        <img src="img/avatar.png" alt="" />
+                        <div class="chat__contact-details">
+                            <span class="chat__name">Collin M.</span>
+                            <span class="chat__address">06 Bell Views, Andyshire BY3LO 0WC</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="messaging">
+                    <div class="property">
+                        <img class="property__photo" src="img/property.png" alt="" />
+                        <div class="property__details">
+                            <div class="property__title">Studio apartment on the fourth floor of a nice cozy home15</div>
+                            <button class="property__details-button property__details-button--show">
+                                Show details
+                            </button>
+                        </div>
+                        <div class="property__animation-container">
+                            <div class="property__address">Carrel del Pintor, Barcelona, Spain</div>
+                            <div class="property__dates">
+                                <div class="property__move">
+                                    <span class="property__move-date">Move in</span>
+                                    <time class="property__datepicker">06/09/17</time>
+                                </div>
+                                <div class="property__move">
+                                    <span class="property__move-date">Move out</span>
+                                    <time class="property__datepicker">06/09/18</time>
+                                </div>
+                            </div>
+                            <div class="property__price-block">
+                                <div class="property__price">&pound;180 / week</div>
+                                <div class="property__price-note">Bills included Up to &pound;120</div>
+                            </div>
+                            <div class="property__action">
+                                <span class="property__question">Ready to start your journey?</span>
+                                <button class="property__button">Book this apartment</button>
+                            </div>
+                            <button class="property__details-button property__details-button--hide">
+                                Hide details
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="messaging__header">
+                            <img src="img/avatar1.png" alt="" />
+                            <div class="messaging__details">
+                                <span class="messaging__name">Collin M.</span>
+                                <span class="messaging__verified">Verified landlord</span>
+                                <div class="messaging__tip">...</div>
+                                <ul class="messaging__options">
+                                    <li>Archive</li>
+                                    <li>Delete</li>
+                                    <li>Report a problem</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="anti-fraud">
+                            <span class="anti-fraud__important">Important!</span> Booking via Student Mundial is 100% safe. Avoid making prepayment directly to landlord as it may be risky.
+                            <i class="anti-fraud__close fa fa-close"></i>
+                            <div class="anti-fraud__not-show-anymore">
+                                <input type="checkbox" id="anti-fraud-checkbox" class="anti-fraud__checkbox">
+                                <label for="anti-fraud-checkbox" class="anti-fraud__label">Do not show any more</label>
+                            </div>
+                        </div>
+                        <div class="messaging__messages">
+                            <div class="no-messages">No messages yet</div>
+                            <div class="messaging__message messaging__message--my">
+                                <p class="messaging__paragraph">Hi, Collin! Is it available between June, 23 and November, 26?</p>
+                                <div class="message__date message__date--my">Today, 23:23</div>
+                            </div>
+                            <div class="messaging__message messaging__message--other">
+                                <p class="messaging__paragraph">Hi, Alexa! Yes it is available at your dates. Do you come alone or with friends?</p>
+                                <div class="message__date message__date--other">Today, 23:23</div>
+                            </div>
+                            <div class="messaging__message messaging__message--other">
+                                <p class="messaging__paragraph">Let me tell you about how great it is! This apartment for students in Barcelona is located in a relaxed area of the residential district of Sant Gervasi, in the northwest of the city. On the second floor of a cute building with elevator you can find the student rooms of this apartment, which has a total space of 160m2</p>
+                                <div class="message__date message__date--other">Today, 23:23</div>
+                            </div>
+                            <div class="messaging__message messaging__message--my">
+                                <p class="messaging__paragraph">Sounds cool! I'm in!</p>
+                                <div class="message__date message__date--my">Today, 23:23<span class="message__seen">Message seen</span></div>
+                            </div>
+                        </div>
+                        <div class="messaging__new">
+                            <textarea class="messaging__input" placeholder="Write a message..."></textarea>
+                            <button class="messaging__send">Send</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
